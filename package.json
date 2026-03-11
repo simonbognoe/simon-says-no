@@ -1,0 +1,15 @@
+{
+  "name": "simon-says-no",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sass styles/main.scss dist/main.css --style=compressed",
+    "watch": "sass styles/main.scss dist/main.css --watch",
+    "serve": "browser-sync start --server --files 'dist/main.css, index.html'",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\""
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "concurrently": "^9.1.2",
+    "sass": "^1.85.0"
+  }
+}
